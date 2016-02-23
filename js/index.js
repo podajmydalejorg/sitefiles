@@ -54,7 +54,7 @@
 			// Images total count
 			this.imagesCount = new Slice(this.Slider.querySelectorAll('img')).length;
 			// Slideshow interval
-			this.sldInterval = 6000;
+			this.sldInterval = 6000*6000000;
 			// Control if it's animating
 			this.isAnimating = false;
 			// Current slide
@@ -182,7 +182,7 @@
 			a.setAttribute('href', obj.url);
 			
 			// Inner texts
-			var info = '<h5>'+number+'</h5><h4>'+obj.alt+'</h4>'; 
+			var info = '<h5>'/*+number*/ +'</h5><h4>'+obj.alt+'</h4>'; 
 			liInfo.innerHTML = info;
 			mask.innerHTML = info;
 
