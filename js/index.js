@@ -287,7 +287,7 @@
 			function animateCurrNavItem (el) {
 				
 				classie.addClass(el, 'active');
-				el.querySelector('.li__info').style.opacity = 0.3;
+				el.querySelector('.li__info').style.opacity = 1;
 				el.querySelector('.li__info-mask').style.opacity = 1;
 
 				TweenMax.to(el.querySelector('.li__info-mask'), self.sldInterval/1000, {
